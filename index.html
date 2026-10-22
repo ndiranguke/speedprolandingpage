@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title id="page-title">SPEEDPRO SPARES COMPANY | Genuine Auto Parts & Fleet Spares</title>
+<meta name="description" content="Speedpro Spares Company, Nairobi: engine, brake, suspension, electrical and wheel spares for Japanese and European vehicles. Request a quote on WhatsApp.">
+<link rel="icon" type="image/png" href="images/logo-mark.png">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{colors:{cy:'#38D5FE',or:'#FF9F1C'}}}}</script>
+<style>
+:root{--bg:#0f1623;--card:#1a2332;--alt:#0b111b;--bd:#2a3649;--tx:#f1f5f9;--mu:#9aa8bd;--in:#0f1623}
+html.light{--bg:#f1f5f9;--card:#fff;--alt:#e6edf5;--bd:#d6dfeb;--tx:#0f172a;--mu:#475569;--in:#f8fafc}
+body{background:var(--bg);color:var(--tx);transition:background .3s,color .3s}
+.card{background:var(--card);border:1px solid var(--bd);transition:border-color .2s,transform .2s}
+.card:hover{border-color:#38D5FE}
+.ti{color:var(--tx)}.mu{color:var(--mu)}.alt{background:var(--alt)}
+.inp{background:var(--in);border:1px solid var(--bd);color:var(--tx);outline:none}
+.inp:focus{border-color:#38D5FE}
+.dk{background:#0b111b;color:#e2e8f0}
+.slides{display:grid}.slide{grid-area:1/1;opacity:0;visibility:hidden;transition:opacity .8s,visibility .8s}
+.slide.on{opacity:1;visibility:visible}
+.tab.on{background:#38D5FE;color:#0b111b;border-color:#38D5FE}
+.pimg{background:#fff}
+details>summary{list-style:none;cursor:pointer}details>summary::-webkit-details-marker{display:none}
+details[open] .chev{transform:rotate(180deg)}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body class="min-h-screen flex flex-col antialiased">
+
+<!-- HEADER -->
+<header class="dk sticky top-0 z-50 border-b border-slate-800">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-2 flex items-center justify-between gap-3">
+    <a href="#top" class="flex items-center gap-2 shrink-0" aria-label="Speedpro Spares Company">
+      <img src="images/logo.png" alt="Speedpro Spares Company logo" class="h-12 sm:h-14 w-auto" width="404" height="548">
+    </a>
+    <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+      <a href="#categories" data-i18n="nav-categories" class="hover:text-cy">Categories</a>
+      <a href="#showcase" data-i18n="nav-gallery" class="hover:text-cy">Gallery</a>
+      <a href="#fleet" class="hover:text-cy">Fleet &amp; Wholesale</a>
+      <a href="#quote-form" data-i18n="nav-quote" class="hover:text-cy">Request Quote</a>
+      <a href="#why-us" data-i18n="nav-why" class="hover:text-cy">Why Us</a>
+      <a href="#contact" data-i18n="nav-contact" class="hover:text-cy">Contact</a>
+    </nav>
+    <div class="flex items-center gap-2">
+      <select id="language-select" onchange="changeLanguage(this.value)" aria-label="Language" class="bg-slate-800 text-slate-200 border border-slate-700 rounded-lg px-2 py-1.5 text-xs sm:text-sm focus:border-cy outline-none">
+        <option value="en">English</option><option value="fr">Français</option><option value="ar">العربية</option>
+      </select>
+      <button onclick="toggleTheme()" aria-label="Toggle light/dark theme" class="p-2 rounded-lg bg-slate-800 border border-slate-700 hover:border-cy text-sm"><span id="theme-icon">🌙</span></button>
+      <a href="https://wa.me/254792424247" target="_blank" rel="noopener" class="hidden sm:flex bg-or hover:bg-orange-500 text-slate-950 font-bold px-4 py-2 rounded-lg text-sm items-center gap-1.5">
+        <svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.8L0 24l6.4-1.7A11.8 11.8 0 0 0 24 11.9c0-3.2-1.2-6.2-3.5-8.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4A9.8 9.8 0 1 1 12 21.8zm5.4-7.3c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.1-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 4.9c2 .8 2.8.9 3.8.7a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3z"/></svg>
+        <span data-i18n="whatsapp-text">WhatsApp Order</span></a>
+      <button onclick="document.getElementById('mnav').classList.toggle('hidden')" aria-label="Menu" class="lg:hidden p-2 rounded-lg bg-slate-800 border border-slate-700 text-lg leading-none">☰</button>
+    </div>
+  </div>
+  <nav id="mnav" class="hidden lg:hidden border-t border-slate-800 px-4 py-3 grid grid-cols-2 gap-2 text-sm text-slate-200" onclick="this.classList.add('hidden')">
+    <a href="#categories" class="py-2">Categories</a><a href="#showcase" class="py-2">Gallery</a>
+    <a href="#fleet" class="py-2">Fleet &amp; Wholesale</a><a href="#quote-form" class="py-2">Request Quote</a>
+    <a href="#why-us" class="py-2">Why Us</a><a href="#contact" class="py-2">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="top" class="dk relative overflow-hidden border-b border-slate-800 bg-gradient-to-br from-[#0b111b] via-[#101a2b] to-[#0d2433]">
+  <div class="slides max-w-6xl mx-auto px-4 sm:px-6 pt-10 pb-20 sm:pt-14 sm:pb-24" id="carousel">
+    <div class="slide on grid md:grid-cols-2 gap-8 items-center">
+      <div class="text-center md:text-start">
+        <span data-i18n="slide1-tag" class="bg-or text-slate-950 font-extrabold text-[10px] sm:text-xs px-3 py-1 rounded-full uppercase tracking-widest inline-block mb-4">Authorized Quality Parts</span>
+        <h1 data-i18n="slide1-title" class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">GENUINE AUTO SPARE PARTS &amp; ACCESSORIES</h1>
+        <p data-i18n="slide1-desc" class="text-slate-300 text-sm sm:text-base mb-6 max-w-xl mx-auto md:mx-0">Engine components, braking systems, turbochargers, spark plugs, and suspension kits for all vehicle models.</p>
+        <div class="flex flex-wrap justify-center md:justify-start gap-3">
+          <a href="#quote-form" data-i18n="btn-quote" class="bg-cy text-slate-950 font-bold px-6 py-3 rounded-lg hover:bg-sky-300 text-sm shadow-lg">Request Part Quote</a>
+          <a href="#showcase" data-i18n="btn-gallery" class="border border-slate-600 hover:border-slate-400 text-white font-medium px-6 py-3 rounded-lg text-sm">View Gallery</a>
+        </div>
+      </div>
+      <div class="relative max-w-md mx-auto w-full"><img src="images/toyota-parts.jpg" alt="Assorted Toyota spare parts" class="w-full aspect-[3/2] object-cover rounded-2xl border border-slate-700 shadow-2xl" fetchpriority="high"><span data-i18n="badge-oem" class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-cy">OEM Standard</span></div>
+    </div>
+    <div class="slide grid md:grid-cols-2 gap-8 items-center">
+      <div class="text-center md:text-start">
+        <span data-i18n="slide2-tag" class="bg-cy text-slate-950 font-extrabold text-[10px] sm:text-xs px-3 py-1 rounded-full uppercase tracking-widest inline-block mb-4">High Performance</span>
+        <h1 data-i18n="slide2-title" class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">TURBOCHARGERS &amp; ENGINE BLOCKS</h1>
+        <p data-i18n="slide2-desc" class="text-slate-300 text-sm sm:text-base mb-6 max-w-xl mx-auto md:mx-0">Maximize vehicle power and fuel efficiency with our premium certified turbo assemblies and internal engine parts.</p>
+        <a href="#quote-form" data-p="Turbocharger" data-i18n="btn-turbo" class="wa-btn bg-or text-slate-950 font-bold px-6 py-3 rounded-lg hover:bg-orange-400 text-sm shadow-lg inline-block">Check Turbo Availability</a>
+      </div>
+      <div class="relative max-w-md mx-auto w-full"><img src="images/turbo-brakes.jpg" alt="Turbocharger, brake disc and coilover" class="w-full aspect-[3/2] object-cover object-[center_45%] rounded-2xl border border-slate-700 shadow-2xl"><span data-i18n="badge-turbo" class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-or">Certified Turbos</span></div>
+    </div>
+    <div class="slide grid md:grid-cols-2 gap-8 items-center">
+      <div class="text-center md:text-start">
+        <span data-i18n="slide3-tag" class="bg-emerald-400 text-slate-950 font-extrabold text-[10px] sm:text-xs px-3 py-1 rounded-full uppercase tracking-widest inline-block mb-4">Road Safety First</span>
+        <h1 data-i18n="slide3-title" class="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-tight mb-4">BRAKE PADS &amp; SHOCK ABSORBERS</h1>
+        <p data-i18n="slide3-desc" class="text-slate-300 text-sm sm:text-base mb-6 max-w-xl mx-auto md:mx-0">Heavy-duty brake pads, discs, and damping shocks built to handle rugged terrain and long-distance fleet operations.</p>
+        <a href="#quote-form" data-p="Brake pads and shock absorbers" data-i18n="btn-brakes" class="wa-btn bg-cy text-slate-950 font-bold px-6 py-3 rounded-lg hover:bg-sky-300 text-sm shadow-lg inline-block">Inquire Brakes &amp; Shocks</a>
+      </div>
+      <div class="relative max-w-md mx-auto w-full"><img src="images/brake-pads-performance.jpg" alt="Performance brake pad packaging" class="w-full aspect-[3/2] object-cover rounded-2xl border border-slate-700 shadow-2xl"><span data-i18n="badge-brakes" class="absolute bottom-3 left-3 bg-slate-950/80 backdrop-blur px-3 py-1 rounded-lg text-xs font-bold text-emerald-400">Superior Stopping Power</span></div>
+    </div>
+  </div>
+  <div class="absolute bottom-10 inset-x-0 flex justify-center gap-2" id="dots"></div>
+</section>
+
+<!-- FINDER -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 -mt-8 relative z-30 w-full">
+  <form id="finder" class="card p-4 sm:p-6 rounded-xl shadow-2xl" onsubmit="return finder(event)">
+    <h3 data-i18n="filter-title" class="text-xs font-bold uppercase tracking-wider text-cy mb-3">Vehicle Part Compatibility Finder</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+      <select id="f-make" class="inp text-sm rounded-lg p-3"><option value="" data-i18n="opt-make">Select Vehicle Make</option><option>Toyota</option><option>Isuzu</option><option>Nissan</option><option>BMW / Mercedes</option><option>Mitsubishi / Mazda</option></select>
+      <select id="f-model" class="inp text-sm rounded-lg p-3"><option value="" data-i18n="opt-model">Select Model / Series</option><option>Hilux / Land Cruiser / Prado</option><option>NPR / NQR / FRR Truck</option><option>BMW 5 Series / 3 Series</option><option>X-Trail / Navara / Fielder</option></select>
+      <input id="f-part" type="text" data-i18n-placeholder="filter-input-placeholder" placeholder="Part Name or OEM Code..." class="inp text-sm rounded-lg p-3">
+      <button type="submit" data-i18n="btn-search" class="bg-cy text-slate-950 font-bold rounded-lg p-3 hover:bg-sky-300 text-sm shadow-md">🔍 Search Part</button>
+    </div>
+  </form>
+</section>
+
+<!-- TRUST BAR -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 w-full">
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-3 text-center text-xs sm:text-sm">
+    <div class="card rounded-xl p-4"><p class="font-black ti">OEM &amp; Aftermarket</p><p class="mu mt-1">Matched to your vehicle</p></div>
+    <div class="card rounded-xl p-4"><p class="font-black ti">Nairobi-Based Hub</p><p class="mu mt-1">Collect or get it delivered</p></div>
+    <div class="card rounded-xl p-4"><p class="font-black ti">Quotes on WhatsApp</p><p class="mu mt-1">Photos &amp; part numbers welcome</p></div>
+    <div class="card rounded-xl p-4"><p class="font-black ti">Garage &amp; Fleet Rates</p><p class="mu mt-1">Wholesale on bulk orders</p></div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="max-w-7xl mx-auto px-4 sm:px-6 py-14 w-full">
+  <div class="text-center mb-10">
+    <h2 data-i18n="cat-heading" class="ti text-2xl sm:text-3xl font-black">Core Spare Part Categories</h2>
+    <p data-i18n="cat-subheading" class="mu text-sm mt-1">Explore our comprehensive catalog of reliable automotive spares.</p>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+    <a href="#showcase" data-f="engine" class="cat group relative rounded-xl overflow-hidden aspect-[3/4] border border-slate-700"><img src="images/turbo-brakes.jpg" alt="Engine and turbo parts" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div><div class="absolute bottom-0 p-3 text-white"><h3 data-i18n="cat1-title" class="font-bold text-sm">Engine &amp; Turbo</h3><p data-i18n="cat1-desc" class="text-[11px] text-slate-300">Blocks, Pistons &amp; Turbos</p></div></a>
+    <a href="#showcase" data-f="brakes" class="cat group relative rounded-xl overflow-hidden aspect-[3/4] border border-slate-700"><img src="images/brake-pads-performance.jpg" alt="Brake pads" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div><div class="absolute bottom-0 p-3 text-white"><h3 data-i18n="cat2-title" class="font-bold text-sm">Braking Systems</h3><p data-i18n="cat2-desc" class="text-[11px] text-slate-300">Pads, Rotors &amp; Discs</p></div></a>
+    <a href="#showcase" data-f="suspension" class="cat group relative rounded-xl overflow-hidden aspect-[3/4] border border-slate-700"><img src="images/shock-absorbers.jpg" alt="Shock absorbers" loading="lazy" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div><div class="absolute bottom-0 p-3 text-white"><h3 data-i18n="cat3-title" class="font-bold text-sm">Suspension</h3><p data-i18n="cat3-desc" class="text-[11px] text-slate-300">Shocks, Arms &amp; Struts</p></div></a>
+    <a href="#showcase" data-f="electrical" class="cat group relative rounded-xl overflow-hidden aspect-[3/4] border border-slate-700"><img src="images/spark-plugs.jpg" alt="Spark plugs" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div><div class="absolute bottom-0 p-3 text-white"><h3 data-i18n="cat4-title" class="font-bold text-sm">Auto Electrical</h3><p data-i18n="cat4-desc" class="text-[11px] text-slate-300">Spark Plugs &amp; Batteries</p></div></a>
+    <a href="#showcase" data-f="wheels" class="cat group relative rounded-xl overflow-hidden aspect-[3/4] border border-slate-700 col-span-2 sm:col-span-1"><img src="images/alloy-rims.jpg" alt="Alloy rims" loading="lazy" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition duration-500"><div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div><div class="absolute bottom-0 p-3 text-white"><h3 data-i18n="cat5-title" class="font-bold text-sm">Wheels &amp; Rims</h3><p data-i18n="cat5-desc" class="text-[11px] text-slate-300">Alloy Rims &amp; Hardware</p></div></a>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="showcase" class="alt border-y border-[var(--bd)] py-14 w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex flex-col md:flex-row justify-between md:items-end gap-4 mb-6">
+      <div>
+        <span data-i18n="gallery-tag" class="text-cy text-xs font-bold uppercase tracking-widest">In-Stock Gallery</span>
+        <h2 data-i18n="gallery-heading" class="ti text-2xl sm:text-3xl font-black mt-1">Real Parts &amp; Components</h2>
+      </div>
+      <p class="mu text-sm max-w-md">Sample product lines we supply. Send your vehicle details for current availability and pricing.</p>
+    </div>
+    <div id="tabs" class="flex gap-2 overflow-x-auto pb-3 mb-4 text-xs font-bold">
+      <button class="tab on card px-4 py-2 rounded-full whitespace-nowrap" data-f="all">All</button>
+      <button class="tab card px-4 py-2 rounded-full whitespace-nowrap" data-f="brakes">Brakes</button>
+      <button class="tab card px-4 py-2 rounded-full whitespace-nowrap" data-f="engine">Engine &amp; Turbo</button>
+      <button class="tab card px-4 py-2 rounded-full whitespace-nowrap" data-f="suspension">Suspension</button>
+      <button class="tab card px-4 py-2 rounded-full whitespace-nowrap" data-f="electrical">Electrical</button>
+      <button class="tab card px-4 py-2 rounded-full whitespace-nowrap" data-f="wheels">Wheels</button>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <!-- PRODUCT CARDS: data-c = category, data-p = name used in the WhatsApp message -->
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="electrical" data-p="Spark plugs">
+        <div class="relative h-52"><img src="images/spark-plugs.jpg" alt="Spark plugs" loading="lazy" class="w-full h-full object-cover"><span data-i18n="item1-badge" class="absolute top-3 left-3 bg-slate-950/80 text-cy text-[10px] font-bold px-2.5 py-1 rounded-md">Electrical</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 data-i18n="item1-title" class="ti font-bold text-sm">High-Ignition Spark Plugs</h3><p data-i18n="item1-desc" class="mu text-xs mt-1">Optimized fuel combustion for Japanese &amp; European vehicles.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>Copper / Iridium</li><li>Sold per set</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span data-i18n="btn-inquire" class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="brakes" data-p="Brake rotors / discs">
+        <div class="relative h-52 pimg"><img src="images/brake-disc.jpg" alt="Brake disc" loading="lazy" class="w-full h-full object-contain"><span data-i18n="item2-badge" class="absolute top-3 left-3 bg-slate-950/80 text-or text-[10px] font-bold px-2.5 py-1 rounded-md">Braking</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 data-i18n="item2-title" class="ti font-bold text-sm">Ventilated Brake Rotors</h3><p data-i18n="item2-desc" class="mu text-xs mt-1">Heat-resistant discs designed for maximum stopping reliability.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>Vented / Drilled</li><li>Front &amp; rear</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="brakes" data-p="Ceramic brake pads">
+        <div class="relative h-52"><img src="images/brake-pads-ceramic.jpg" alt="Ceramic brake pads" loading="lazy" class="w-full h-full object-cover"><span class="absolute top-3 left-3 bg-slate-950/80 text-or text-[10px] font-bold px-2.5 py-1 rounded-md">Braking</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 class="ti font-bold text-sm">Ceramic &amp; Semi-Metallic Brake Pads</h3><p class="mu text-xs mt-1">Quiet, low-dust stopping for daily drivers and fleet vehicles.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>Low dust</li><li>Axle sets</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="wheels" data-p="Alloy wheels / rims">
+        <div class="relative h-52"><img src="images/alloy-rims.jpg" alt="Alloy rims" loading="lazy" class="w-full h-full object-cover"><span data-i18n="item3-badge" class="absolute top-3 left-3 bg-slate-950/80 text-emerald-400 text-[10px] font-bold px-2.5 py-1 rounded-md">Wheels</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 data-i18n="item3-title" class="ti font-bold text-sm">Alloy Wheels &amp; Rims</h3><p data-i18n="item3-desc" class="mu text-xs mt-1">Durable, lightweight alloy rims for improved vehicle handling.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>Various PCD &amp; sizes</li><li>Sold per piece / set</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="suspension" data-p="Shock absorbers">
+        <div class="relative h-52"><img src="images/shock-absorbers.jpg" alt="Shock absorber packaging" loading="lazy" class="w-full h-full object-cover object-top"><span class="absolute top-3 left-3 bg-slate-950/80 text-cy text-[10px] font-bold px-2.5 py-1 rounded-md">Suspension</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 class="ti font-bold text-sm">Shock Absorbers</h3><p class="mu text-xs mt-1">High-damping struts for rough roads and long-distance loads.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>Gas / Oil</li><li>Front &amp; rear</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="engine" data-p="Turbocharger">
+        <div class="relative h-52"><img src="images/turbo-brakes.jpg" alt="Turbocharger" loading="lazy" class="w-full h-full object-cover object-[center_55%]"><span class="absolute top-3 left-3 bg-slate-950/80 text-or text-[10px] font-bold px-2.5 py-1 rounded-md">Engine</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 class="ti font-bold text-sm">Turbochargers</h3><p class="mu text-xs mt-1">Turbo assemblies for diesel and petrol engines. Quote by engine code.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>New &amp; reconditioned</li><li>Engine code match</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="engine" data-p="Engine mounts and bushes">
+        <div class="relative h-52"><img src="images/engine-mounts.jpg" alt="Engine mounts and bushes on display" loading="lazy" class="w-full h-full object-cover"><span class="absolute top-3 left-3 bg-slate-950/80 text-or text-[10px] font-bold px-2.5 py-1 rounded-md">Engine</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 class="ti font-bold text-sm">Engine Mounts &amp; Suspension Bushes</h3><p class="mu text-xs mt-1">Cut vibration and noise with correctly matched rubber and hydraulic mounts.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>Hundreds of fitments</li><li>Match by part no.</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+      <article class="prod card rounded-xl overflow-hidden flex flex-col" data-c="electrical" data-p="Batteries, shocks and tyres">
+        <div class="relative h-52 pimg"><img src="images/parts-hero.jpg" alt="Engine, tyre, battery, brake disc and shock absorber" loading="lazy" class="w-full h-full object-contain"><span data-i18n="item4-badge" class="absolute top-3 left-3 bg-slate-950/80 text-cy text-[10px] font-bold px-2.5 py-1 rounded-md">Suspension &amp; Power</span></div>
+        <div class="p-4 flex-1 flex flex-col"><h3 data-i18n="item4-title" class="ti font-bold text-sm">Shocks &amp; Batteries</h3><p data-i18n="item4-desc" class="mu text-xs mt-1">Heavy-duty power batteries and high-damping shock absorbers.</p>
+        <ul class="chips mt-3 flex flex-wrap gap-1.5 text-[10px] font-semibold"><li>12V batteries</li><li>Tyres on request</li></ul>
+        <button class="inq mt-auto pt-4 w-full"><span class="block text-center border border-cy text-cy hover:bg-cy hover:text-slate-950 text-xs font-bold py-2 rounded-lg transition">Inquire Price</span></button></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FLEET & WHOLESALE -->
+<section id="fleet" class="max-w-7xl mx-auto px-4 sm:px-6 py-14 w-full">
+  <div class="grid lg:grid-cols-2 gap-10 items-center">
+    <div class="grid grid-cols-2 gap-3">
+      <img src="images/warehouse.jpg" alt="Large warehouse of engine and drivetrain parts" loading="lazy" class="rounded-xl w-full h-64 sm:h-80 object-cover object-top border border-[var(--bd)]">
+      <img src="images/bmw-european.jpg" alt="European vehicle components" loading="lazy" class="rounded-xl w-full h-64 sm:h-80 object-cover border border-[var(--bd)] mt-6">
+    </div>
+    <div>
+      <span class="text-cy text-xs font-bold uppercase tracking-widest">Garages, Fleets &amp; Resellers</span>
+      <h2 class="ti text-2xl sm:text-3xl font-black mt-1 mb-4">Keep Your Vehicles on the Road</h2>
+      <p class="mu text-sm mb-5">Dispatch and fleet work needs the right part, fast. Send us your list and we will confirm availability, match parts to each vehicle and quote in one reply.</p>
+      <ul class="space-y-3 text-sm">
+        <li class="flex gap-3"><span class="text-cy font-black">✓</span><span><b class="ti">Parts lists &amp; bulk quotes.</b> <span class="mu">Send a whole service list for one vehicle or a whole fleet.</span></span></li>
+        <li class="flex gap-3"><span class="text-cy font-black">✓</span><span><b class="ti">Match by OEM / part number.</b> <span class="mu">Share a photo of the old part or its number to avoid wrong orders.</span></span></li>
+        <li class="flex gap-3"><span class="text-cy font-black">✓</span><span><b class="ti">Truck &amp; light-vehicle ranges.</b> <span class="mu">Isuzu NPR / NQR / FRR, Toyota Hilux &amp; Land Cruiser, Nissan, Mitsubishi, Mazda, BMW &amp; Mercedes.</span></span></li>
+        <li class="flex gap-3"><span class="text-cy font-black">✓</span><span><b class="ti">Repeat-order pricing.</b> <span class="mu">Ask about garage and wholesale rates for regular buyers.</span></span></li>
+      </ul>
+      <a href="#quote-form" class="inline-block mt-6 bg-or text-slate-950 font-bold px-6 py-3 rounded-lg hover:bg-orange-400 text-sm">Get a Fleet Quote</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="alt border-y border-[var(--bd)] py-14 w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <h2 class="ti text-2xl sm:text-3xl font-black text-center mb-10">How Ordering Works</h2>
+    <ol class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+      <li class="card rounded-xl p-5"><span class="text-or font-black text-2xl">01</span><h3 class="ti font-bold mt-2">Send your request</h3><p class="mu text-xs mt-1">Vehicle make, model, year and the part you need. A photo or OEM number helps.</p></li>
+      <li class="card rounded-xl p-5"><span class="text-or font-black text-2xl">02</span><h3 class="ti font-bold mt-2">We match the part</h3><p class="mu text-xs mt-1">We check fitment and availability, including OEM and quality aftermarket options.</p></li>
+      <li class="card rounded-xl p-5"><span class="text-or font-black text-2xl">03</span><h3 class="ti font-bold mt-2">Get your quote</h3><p class="mu text-xs mt-1">Price and options come back on WhatsApp so you can decide quickly.</p></li>
+      <li class="card rounded-xl p-5"><span class="text-or font-black text-2xl">04</span><h3 class="ti font-bold mt-2">Collect or deliver</h3><p class="mu text-xs mt-1">Pick up from our Nairobi hub or arrange dispatch to your garage or site.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- QUOTE FORM & WHY US -->
+<section id="quote-form" class="py-14 w-full">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+    <form id="qf" class="card p-6 sm:p-8 rounded-xl shadow-xl space-y-4" onsubmit="return quote(event)">
+      <div><h3 data-i18n="form-heading" class="ti text-xl font-bold mb-1">Request a Spare Part Quote</h3><p data-i18n="form-subheading" class="mu text-xs">Fill out your vehicle specs and required components for an instant response.</p></div>
+      <div><label for="q-name" data-i18n="form-lbl-name" class="mu block text-xs mb-1">Your Name / Workshop Name</label><input id="q-name" required type="text" data-i18n-placeholder="form-ph-name" placeholder="e.g. David / Express Motors" class="inp w-full text-sm p-3 rounded-lg"></div>
+      <div><label for="q-phone" data-i18n="form-lbl-phone" class="mu block text-xs mb-1">WhatsApp Phone Number</label><input id="q-phone" type="tel" data-i18n-placeholder="form-ph-phone" placeholder="07XX XXX XXX" class="inp w-full text-sm p-3 rounded-lg"></div>
+      <div class="grid sm:grid-cols-2 gap-3">
+        <div><label for="q-veh" data-i18n="form-lbl-vehicle" class="mu block text-xs mb-1">Vehicle Make &amp; Model</label><input id="q-veh" type="text" data-i18n-placeholder="form-ph-vehicle" placeholder="e.g. Toyota Hilux 2019" class="inp w-full text-sm p-3 rounded-lg"></div>
+        <div><label for="q-part" data-i18n="form-lbl-part" class="mu block text-xs mb-1">Part Needed / OEM</label><input id="q-part" required type="text" data-i18n-placeholder="form-ph-part" placeholder="e.g. Brake Pads / Turbo" class="inp w-full text-sm p-3 rounded-lg"></div>
+      </div>
+      <button type="submit" data-i18n="form-btn-submit" class="w-full bg-or hover:bg-orange-400 text-slate-950 font-black py-3 rounded-lg text-sm shadow-md">SEND INQUIRY VIA WHATSAPP</button>
+    </form>
+    <div id="why-us" class="space-y-6">
+      <div><span data-i18n="why-tag" class="text-cy text-xs font-bold uppercase tracking-widest">Why Choose Speedpro Spares</span><h2 data-i18n="why-heading" class="ti text-2xl sm:text-3xl font-black mt-1">Engineered for Reliability &amp; Speed</h2></div>
+      <div class="flex gap-4"><div class="bg-cy/10 p-3 rounded-xl h-fit">🛡️</div><div><h4 data-i18n="why1-title" class="ti font-bold text-sm">100% Genuine &amp; Tested Parts</h4><p data-i18n="why1-desc" class="mu text-xs mt-0.5">Every component is vetted for performance, durability, and exact manufacturer specifications.</p></div></div>
+      <div class="flex gap-4"><div class="bg-or/10 p-3 rounded-xl h-fit">🚀</div><div><h4 data-i18n="why2-title" class="ti font-bold text-sm">Express Countrywide Dispatch</h4><p data-i18n="why2-desc" class="mu text-xs mt-0.5">Rapid logistics delivery straight to your mechanic's bay or breakdown location.</p></div></div>
+      <div class="flex gap-4"><div class="bg-emerald-500/10 p-3 rounded-xl h-fit">💵</div><div><h4 data-i18n="why3-title" class="ti font-bold text-sm">Special Mechanic &amp; Fleet Rates</h4><p data-i18n="why3-desc" class="mu text-xs mt-0.5">Competitive wholesale packages designed for garages and commercial fleet operators.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="alt border-t border-[var(--bd)] py-14 w-full">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <h2 class="ti text-2xl sm:text-3xl font-black text-center mb-8">Frequently Asked Questions</h2>
+    <div class="space-y-3 text-sm">
+      <details class="card rounded-xl p-4"><summary class="ti font-bold flex justify-between gap-3">How do I know a part will fit my vehicle?<span class="chev transition">⌄</span></summary><p class="mu mt-3">Send the make, model, year and, if you can, the old part's number or a photo. We confirm fitment before you pay.</p></details>
+      <details class="card rounded-xl p-4"><summary class="ti font-bold flex justify-between gap-3">Do you sell OEM and aftermarket parts?<span class="chev transition">⌄</span></summary><p class="mu mt-3">Yes. Ask for the options available for your vehicle and we will quote them side by side where possible.</p></details>
+      <details class="card rounded-xl p-4"><summary class="ti font-bold flex justify-between gap-3">Can you deliver outside Nairobi?<span class="chev transition">⌄</span></summary><p class="mu mt-3">Yes, we dispatch countrywide. Delivery time and cost depend on the destination and are confirmed in your quote.</p></details>
+      <details class="card rounded-xl p-4"><summary class="ti font-bold flex justify-between gap-3">Do you offer garage or fleet pricing?<span class="chev transition">⌄</span></summary><p class="mu mt-3">Yes. Send your parts list and expected monthly volume for wholesale rates.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="contact" class="dk border-t border-slate-800 text-xs text-slate-400 mt-auto">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 py-10 grid gap-8 md:grid-cols-3 text-center md:text-start">
+    <div><img src="images/logo.png" alt="Speedpro Spares Company" class="h-20 w-auto mx-auto md:mx-0 mb-3"><p data-i18n="footer-desc" class="max-w-xs mx-auto md:mx-0">Your premier destination for high-grade vehicle spares and logistics parts.</p></div>
+    <div><p class="font-bold text-slate-200 mb-2">Quick Links</p><div class="grid grid-cols-2 md:grid-cols-1 gap-1"><a href="#categories" class="hover:text-cy">Categories</a><a href="#showcase" class="hover:text-cy">Products</a><a href="#fleet" class="hover:text-cy">Fleet &amp; Wholesale</a><a href="#quote-form" class="hover:text-cy">Request a Quote</a></div></div>
+    <div class="space-y-3">
+      <div><span data-i18n="footer-addr-title" class="font-bold text-slate-200 block">Shop Address:</span><span data-i18n="footer-addr-val">Industrial Area / Main Spare Hub, Nairobi</span></div>
+      <div><span data-i18n="footer-sup-title" class="font-bold text-slate-200 block">Direct Support:</span><a href="tel:+254792424247" data-i18n="footer-sup-val" class="hover:text-cy">WhatsApp / Call: 0792 424 247</a></div>
+    </div>
+  </div>
+  <p class="text-center py-4 border-t border-slate-800 text-slate-500">© 2026 Speedpro Spares Company. All rights reserved.</p>
+</footer>
+
+<a href="https://wa.me/254792424247" target="_blank" rel="noopener" aria-label="Chat on WhatsApp" class="fixed bottom-5 right-5 rtl:right-auto rtl:left-5 bg-emerald-500 hover:bg-emerald-600 text-white p-3.5 rounded-full shadow-2xl z-50 hover:scale-105 transition">
+  <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11.8 11.8 0 0 0 1.9 17.8L0 24l6.4-1.7A11.8 11.8 0 0 0 24 11.9c0-3.2-1.2-6.2-3.5-8.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4A9.8 9.8 0 1 1 12 21.8zm5.4-7.3c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.1-.3.2-.6.1a8 8 0 0 1-4-3.5c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-.9-2.1c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.7 3.7 0 0 0-1.1 2.7 6.4 6.4 0 0 0 1.4 3.4 14.6 14.6 0 0 0 5.6 4.9c2 .8 2.8.9 3.8.7a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.1-.3-.2-.6-.3z"/></svg>
+</a>
+
+<script>
+const translations = {
+      en: {
+        "page-title": "SPEEDPRO SPARES COMPANY | Genuine Auto Parts & Fleet Spares",
+        "nav-company": "Company",
+        "nav-categories": "Categories",
+        "nav-gallery": "Gallery",
+        "nav-quote": "Request Quote",
+        "nav-why": "Why Us",
+        "nav-contact": "Contact",
+        "whatsapp-text": "WhatsApp Order",
+        "slide1-tag": "Authorized Quality Parts",
+        "slide1-title": "GENUINE AUTO SPARE PARTS & ACCESSORIES",
+        "slide1-desc": "Engine components, braking systems, turbochargers, spark plugs, and suspension kits for all vehicle models.",
+        "btn-quote": "Request Part Quote",
+        "btn-gallery": "View Gallery",
+        "badge-oem": "OEM Standard",
+        "slide2-tag": "High Performance",
+        "slide2-title": "TURBOCHARGERS & ENGINE BLOCKS",
+        "slide2-desc": "Maximize vehicle power and fuel efficiency with our premium certified turbo assemblies and internal engine parts.",
+        "btn-turbo": "Check Turbo Availability",
+        "badge-turbo": "Certified Turbos",
+        "slide3-tag": "Road Safety First",
+        "slide3-title": "BRAKE PADS & SHOCK ABSORBERS",
+        "slide3-desc": "Heavy-duty brake pads, discs, and damping shocks built to handle rugged terrain and long-distance fleet operations.",
+        "btn-brakes": "Inquire Brakes & Shocks",
+        "badge-brakes": "Superior Stopping Power",
+        "filter-title": "Vehicle Part Compatibility Finder",
+        "opt-make": "Select Vehicle Make",
+        "opt-model": "Select Model / Series",
+        "filter-input-placeholder": "Part Name or OEM Code...",
+        "btn-search": "🔍 Search Part",
+        "cat-heading": "Core Spare Part Categories",
+        "cat-subheading": "Explore our comprehensive catalog of reliable automotive spares.",
+        "cat1-title": "Engine & Turbo",
+        "cat1-desc": "Blocks, Pistons & Turbos",
+        "cat2-title": "Braking Systems",
+        "cat2-desc": "Pads, Rotors & Discs",
+        "cat3-title": "Suspension",
+        "cat3-desc": "Shocks, Arms & Struts",
+        "cat4-title": "Auto Electrical",
+        "cat4-desc": "Spark Plugs & Batteries",
+        "cat5-title": "Wheels & Rims",
+        "cat5-desc": "Alloy Rims & Hardware",
+        "gallery-tag": "In-Stock Gallery",
+        "gallery-heading": "Real Parts & Components",
+        "gallery-subheading": "Browse through samples of our actual inventory including spark plugs, disc brakes, alloy rims, shock packages, and engine assemblies.",
+        "item1-badge": "Electrical",
+        "item1-title": "High-Ignition Spark Plugs",
+        "item1-desc": "Optimized fuel combustion for Japanese & European vehicles.",
+        "item2-badge": "Braking",
+        "item2-title": "Ventilated Brake Rotors",
+        "item2-desc": "Heat-resistant discs designed for maximum stopping reliability.",
+        "item3-badge": "Wheels",
+        "item3-title": "Alloy Wheels & Rims",
+        "item3-desc": "Durable, lightweight alloy rims for improved vehicle handling.",
+        "item4-badge": "Suspension & Power",
+        "item4-title": "Shocks & Batteries",
+        "item4-desc": "Heavy-duty power batteries and high-damping shock absorbers.",
+        "btn-inquire": "Inquire Price",
+        "form-heading": "Request a Spare Part Quote",
+        "form-subheading": "Fill out your vehicle specs and required components for an instant response.",
+        "form-lbl-name": "Your Name / Workshop Name",
+        "form-ph-name": "e.g. David / Express Motors",
+        "form-lbl-phone": "WhatsApp Phone Number",
+        "form-ph-phone": "07XX XXX XXX",
+        "form-lbl-vehicle": "Vehicle Make & Model",
+        "form-ph-vehicle": "e.g. Toyota Hilux 2019",
+        "form-lbl-part": "Part Needed / OEM",
+        "form-ph-part": "e.g. Brake Pads / Turbo",
+        "form-btn-submit": "SEND INQUIRY VIA WHATSAPP",
+        "why-tag": "Why Choose Speedpro Spares",
+        "why-heading": "Engineered for Reliability & Speed",
+        "why1-title": "100% Genuine & Tested Parts",
+        "why1-desc": "Every component is vetted for performance, durability, and exact manufacturer specifications.",
+        "why2-title": "Express Countrywide Dispatch",
+        "why2-desc": "Rapid logistics delivery straight to your mechanic's bay or breakdown location.",
+        "why3-title": "Special Mechanic & Fleet Rates",
+        "why3-desc": "Competitive wholesale packages designed for garages and commercial fleet operators.",
+        "footer-brand": "SPEEDPRO SPARES COMPANY",
+        "footer-desc": "Your premier destination for high-grade vehicle spares and logistics parts.",
+        "footer-addr-title": "Shop Address:",
+        "footer-addr-val": "Industrial Area / Main Spare Hub, Nairobi",
+        "footer-sup-title": "Direct Support:",
+        "footer-sup-val": "WhatsApp / Call: 0792 424 247"
+      },
+      fr: {
+        "page-title": "SPEEDPRO SPARES COMPANY | Pièces Auto d'Origine & Pièces de Flotte",
+        "nav-company": "Entreprise",
+        "nav-categories": "Catégories",
+        "nav-gallery": "Galerie",
+        "nav-quote": "Demander un devis",
+        "nav-why": "Pourquoi Nous",
+        "nav-contact": "Contact",
+        "whatsapp-text": "Commande WhatsApp",
+        "slide1-tag": "Pièces de Qualité Autorisées",
+        "slide1-title": "PIÈCES DÉTACHÉES ET ACCESSOIRES AUTO D'ORIGINE",
+        "slide1-desc": "Composants moteurs, systèmes de freinage, turbocompresseurs, bougies d'allumage et kits de suspension pour tous les véhicules.",
+        "btn-quote": "Demander un devis",
+        "btn-gallery": "Voir la galerie",
+        "badge-oem": "Standard OEM",
+        "slide2-tag": "Haute Performance",
+        "slide2-title": "TURBOCOMPRESSEURS ET BLOCS MOTEURS",
+        "slide2-desc": "Maximisez la puissance et l'efficacité énergétique avec nos turbos certifiés et pièces internes.",
+        "btn-turbo": "Vérifier la dispo du turbo",
+        "badge-turbo": "Turbos Certifiés",
+        "slide3-tag": "Sécurité Routière Avant Tout",
+        "slide3-title": "PLAQUETTES DE FREIN ET AMORTISSEURS",
+        "slide3-desc": "Plaquettes de frein robustes et amortisseurs conçus pour affronter les terrains difficiles.",
+        "btn-brakes": "Demander Freins & Amortisseurs",
+        "badge-brakes": "Puissance de Freinage Supérieure",
+        "filter-title": "Recherche de Compatibilité de Pièces",
+        "opt-make": "Sélectionner la Marque",
+        "opt-model": "Sélectionner le Modèle",
+        "filter-input-placeholder": "Nom de la pièce ou code OEM...",
+        "btn-search": "🔍 Chercher la Pièce",
+        "cat-heading": "Catégories Principales de Pièces",
+        "cat-subheading": "Explorez notre catalogue complet de pièces automobiles fiables.",
+        "cat1-title": "Moteur & Turbo",
+        "cat1-desc": "Blocs, Pistons & Turbos",
+        "cat2-title": "Systèmes de Freinage",
+        "cat2-desc": "Plaquettes, Rotors & Disques",
+        "cat3-title": "Suspension",
+        "cat3-desc": "Amortisseurs & Bras",
+        "cat4-title": "Électricité Auto",
+        "cat4-desc": "Bougies & Batteries",
+        "cat5-title": "Jantes & Roues",
+        "cat5-desc": "Jantes en Alliage & Quincaillerie",
+        "gallery-tag": "Galerie en Stock",
+        "gallery-heading": "Pièces & Composants Réels",
+        "gallery-subheading": "Parcourez des exemples de notre inventaire réel incluant bougies, freins, jantes et blocs moteurs.",
+        "item1-badge": "Électricité",
+        "item1-title": "Bougies d'Allumage Haute Performance",
+        "item1-desc": "Combustion optimisée pour véhicules japonais et européens.",
+        "item2-badge": "Freinage",
+        "item2-title": "Disques de Frein Ventilés",
+        "item2-desc": "Disques résistants à la chaleur pour une fiabilité maximale.",
+        "item3-badge": "Roues",
+        "item3-title": "Jantes en Alliage",
+        "item3-desc": "Jantes légères et durables pour une meilleure maniabilité.",
+        "item4-badge": "Suspension & Puissance",
+        "item4-title": "Amortisseurs & Batteries",
+        "item4-desc": "Batteries haute puissance et amortisseurs haute performance.",
+        "btn-inquire": "Demander le prix",
+        "form-heading": "Demander un Devis de Pièce",
+        "form-subheading": "Remplissez vos spécifications pour une réponse instantanée.",
+        "form-lbl-name": "Votre Nom / Nom de l'Atelier",
+        "form-ph-name": "ex. David / Express Motors",
+        "form-lbl-phone": "Numéro de Téléphone WhatsApp",
+        "form-ph-phone": "07XX XXX XXX",
+        "form-lbl-vehicle": "Marque & Modèle du Véhicule",
+        "form-ph-vehicle": "ex. Toyota Hilux 2019",
+        "form-lbl-part": "Pièce Nécessaire / OEM",
+        "form-ph-part": "ex. Plaquettes de frein / Turbo",
+        "form-btn-submit": "ENVOYER LA DEMANDE VIA WHATSAPP",
+        "why-tag": "Pourquoi Choisir Speedpro Spares",
+        "why-heading": "Conçu pour la Fiabilité & la Rapidité",
+        "why1-title": "100% Pièces d'Origine Testées",
+        "why1-desc": "Chaque composant est vérifié pour sa performance et sa durabilité.",
+        "why2-title": "Expédition Rapide dans tout le Pays",
+        "why2-desc": "Livraison logistique rapide directement à votre garage.",
+        "why3-title": "Tarifs Spéciaux Garages & Flottes",
+        "why3-desc": "Forfaits de gros compétitifs pour ateliers et gestionnaires de flotte.",
+        "footer-brand": "SPEEDPRO SPARES COMPANY",
+        "footer-desc": "Votre destination privilégiée pour les pièces détachées de haute qualité.",
+        "footer-addr-title": "Adresse de la Boutique :",
+        "footer-addr-val": "Zone Industrielle / Hub Principal, Nairobi",
+        "footer-sup-title": "Support Direct :",
+        "footer-sup-val": "WhatsApp / Appel : 0792 424 247"
+      },
+      ar: {
+        "page-title": "شركة سبيدبرو لقطع الغيار | قطع غيار أصلية ومستلزمات الأساطيل",
+        "nav-company": "الشركة",
+        "nav-categories": "الفئات",
+        "nav-gallery": "المعرض",
+        "nav-quote": "طلب عرض سعر",
+        "nav-why": "لماذا نحن",
+        "nav-contact": "اتصل بنا",
+        "whatsapp-text": "طلب واتساب",
+        "slide1-tag": "قطع غيار معتمدة وعالية الجودة",
+        "slide1-title": "قطع غيار وإكسسوارات سيارات أصلية",
+        "slide1-desc": "مكونات المحركات، أنظمة الفرامل، الشواحن التوربينية، شمعات الاحتراق، ومجموعات التعليق لجميع طرازات السيارات.",
+        "btn-quote": "طلب تسعيرة قطعة",
+        "btn-gallery": "عرض المعرض",
+        "badge-oem": "معايير OEM",
+        "slide2-tag": "أداء عالي",
+        "slide2-title": "الشواحن التوربينية وكتل المحركات",
+        "slide2-desc": "تعظيم قوة السيارة وكفاءة استهلاك الوقود من خلال وحدات التيربو المعتمدة وأجزاء المحرك الداخلية.",
+        "btn-turbo": "تحقق من توفر التيربو",
+        "badge-turbo": "تيربو معتمد",
+        "slide3-tag": "سلامة الطرق أولاً",
+        "slide3-title": "فحمات الفرامل ومساعدات التعليق",
+        "slide3-desc": "فحمات فرامل قوية ومساعدات مصممة خصيصاً لتحمل التضاريس الوعرة وعمليات الأساطيل لمسافات طويلة.",
+        "btn-brakes": "استفسر عن الفرامل والمساعدات",
+        "badge-brakes": "قوة إيقاف فائقة",
+        "filter-title": "محدد توافق قطع غيار السيارات",
+        "opt-make": "اختر ماركة السيارة",
+        "opt-model": "اختر الطراز / الفئة",
+        "filter-input-placeholder": "اسم القطعة أو رقم OEM...",
+        "btn-search": "🔍 بحث عن قطعة",
+        "cat-heading": "فئات قطع الغيار الأساسية",
+        "cat-subheading": "استكشف كتالوجنا الشامل لقطع غيار السيارات الموثوقة.",
+        "cat1-title": "المحرك والتيربو",
+        "cat1-desc": "الكتل، البساتم والتيربو",
+        "cat2-title": "أنظمة الفرامل",
+        "cat2-desc": "الفحمات، الهوبات والأقراص",
+        "cat3-title": "نظام التعليق",
+        "cat3-desc": "المساعدات، الأذرع والمقصات",
+        "cat4-title": "كهرباء السيارات",
+        "cat4-desc": "شمعات الاحتراق والبطاريات",
+        "cat5-title": "العجلات والجنوط",
+        "cat5-desc": "جنوط الألمنيوم واللوازم",
+        "gallery-tag": "معرض المخزون",
+        "gallery-heading": "قطع ومكونات حقيقية",
+        "gallery-subheading": "تصفح عينات من مخزوننا الفعلي بما في ذلك شمعات الاحتراق، ديسكات الفرامل، الجنوط، ومجموعات المساعدات.",
+        "item1-badge": "كهرباء",
+        "item1-title": "شمعات احتراق عالية الأداء",
+        "item1-desc": "احتراق وقود محسّن للسيارات اليابانية والأوروبية.",
+        "item2-badge": "فرامل",
+        "item2-title": "ديسكات فرامل تهوية",
+        "item2-desc": "أقراص مقاومة للحرارة مصممة لأقصى موثوقية في التوقف.",
+        "item3-badge": "عجلات",
+        "item3-title": "جنوط وعجلات من الألمنيوم",
+        "item3-desc": "جنوط خفيفة ومتينة لتحسين تحكم السيارة.",
+        "item4-badge": "التعليق والطاقة",
+        "item4-title": "مساعدات وبطاريات",
+        "item4-desc": "بطاريات طاقة شديدة التحمل ومساعدات عالية التخميد.",
+        "btn-inquire": "استفسر عن السعر",
+        "form-heading": "طلب عرض سعر لقطعة غيار",
+        "form-subheading": "املأ مواصفات سيارتك والقطع المطلوبة للحصول على رد فوري.",
+        "form-lbl-name": "اسمك / اسم الورشة",
+        "form-ph-name": "مثال: ديفيد / إكسبريس موتورز",
+        "form-lbl-phone": "رقم هاتف واتساب",
+        "form-ph-phone": "07XX XXX XXX",
+        "form-lbl-vehicle": "ماركة وطراز السيارة",
+        "form-ph-vehicle": "مثال: تويوتا هايلكس 2019",
+        "form-lbl-part": "القطعة المطلوبة / OEM",
+        "form-ph-part": "مثال: فحمات فرامل / تيربو",
+        "form-btn-submit": "إرسال الاستفسار عبر واتساب",
+        "why-tag": "لماذا تختار سبيدبرو لقطع الغيار",
+        "why-heading": "مصممة من أجل الموثوقية والسرعة",
+        "why1-title": "قطع غيار أصلية ومختبرة 100%",
+        "why1-desc": "يتم فحص كل مكون بدقة لضمان الأداء والمتانة ومواصفات المصنع الدقيقة.",
+        "why2-title": "شحن سريع لكافة أنحاء البلاد",
+        "why2-desc": "خدمة توصيل لوجستية سريعة مباشرة إلى ورشة الصيانة أو موقع الأعطال.",
+        "why3-title": "أسعار خاصة للورش والأساطيل",
+        "why3-desc": "باقات جملة تنافسية مصممة خصيصاً للورش ومشغلي الأساطيل التجارية.",
+        "footer-brand": "شركة سبيدبرو لقطع الغيار",
+        "footer-desc": "وجهتك الأولى لقطع غيار السيارات عالية الجودة وقطع اللوجستيات.",
+        "footer-addr-title": "عنوان المتجر:",
+        "footer-addr-val": "المنطقة الصناعية / مركز قطع الغيار الرئيسي، نيروبي",
+        "footer-sup-title": "الدعم المباشر:",
+        "footer-sup-val": "واتساب / اتصال: 0792 424 247"
+      }
+    };
+Object.assign(translations.en,{});
+const WA='254792424247';
+const wa=t=>window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(t),'_blank','noopener');
+
+function changeLanguage(lang){
+  const d=translations[lang],h=document.documentElement;
+  h.dir=lang==='ar'?'rtl':'ltr';h.lang=lang;
+  document.querySelectorAll('[data-i18n]').forEach(e=>{const v=d[e.dataset.i18n];if(v)e.textContent=v});
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(e=>{const v=d[e.dataset.i18nPlaceholder];if(v)e.placeholder=v});
+  if(d['page-title'])document.title=d['page-title'];
+}
+function toggleTheme(){
+  const l=document.documentElement.classList.toggle('light');
+  document.getElementById('theme-icon').textContent=l?'☀️':'🌙';
+  try{localStorage.setItem('sp-theme',l?'light':'dark')}catch(e){}
+}
+try{if(localStorage.getItem('sp-theme')==='light')toggleTheme()}catch(e){}
+
+// chips styling
+document.querySelectorAll('.chips li').forEach(li=>li.className='px-2 py-1 rounded-md border border-[var(--bd)] mu');
+
+// WhatsApp actions
+function finder(e){e.preventDefault();
+  const m=f=>document.getElementById(f).value.trim();
+  const parts=[m('f-make')&&'Make: '+m('f-make'),m('f-model')&&'Model: '+m('f-model'),m('f-part')&&'Part: '+m('f-part')].filter(Boolean);
+  wa('Hello Speedpro Spares, I am looking for a part.'+(parts.length?'\n'+parts.join('\n'):''));return false}
+function quote(e){e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  wa('Hello Speedpro Spares, I would like a quote.\nName: '+v('q-name')+(v('q-phone')?'\nPhone: '+v('q-phone'):'')+(v('q-veh')?'\nVehicle: '+v('q-veh'):'')+'\nPart: '+v('q-part'));return false}
+document.querySelectorAll('.inq').forEach(b=>b.onclick=()=>wa('Hello Speedpro Spares, please send me the price and availability for: '+b.closest('.prod').dataset.p+'.\nVehicle (make/model/year): '));
+document.querySelectorAll('.wa-btn').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();wa('Hello Speedpro Spares, please send me the price and availability for: '+a.dataset.p+'.\nVehicle (make/model/year): ')}));
+
+// product filter (tabs and category cards)
+function filt(f){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.toggle('on',t.dataset.f===f));
+  document.querySelectorAll('.prod').forEach(p=>p.style.display=(f==='all'||p.dataset.c===f)?'':'none');
+}
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>filt(t.dataset.f));
+document.querySelectorAll('.cat').forEach(c=>c.addEventListener('click',()=>filt(c.dataset.f)));
+
+// carousel
+const slides=[...document.querySelectorAll('.slide')],dots=document.getElementById('dots');let cur=0,timer;
+slides.forEach((_,i)=>{const b=document.createElement('button');b.setAttribute('aria-label','Slide '+(i+1));b.className='w-2.5 h-2.5 rounded-full bg-white/30';b.onclick=()=>{show(i);start()};dots.appendChild(b)});
+function show(i){cur=(i+slides.length)%slides.length;slides.forEach((s,k)=>s.classList.toggle('on',k===cur));[...dots.children].forEach((d,k)=>{d.className='h-2.5 rounded-full transition-all '+(k===cur?'w-6 bg-cy':'w-2.5 bg-white/30')})}
+function start(){clearInterval(timer);timer=setInterval(()=>show(cur+1),6000)}
+show(0);start();
+</script>
+</body>
+</html>
